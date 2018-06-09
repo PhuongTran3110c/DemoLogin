@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#17ACDD"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Account"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Account Login"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#FEFDFB"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/Account">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FEFDFB"
+            android:elevation="4dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_weight="9"
+                        android:id="@+id/edittextuser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Nhập tên người dùng..."
+                        android:singleLine="true"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="10">
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pass"
+                        android:layout_gravity="center"
+                        />
+                    <EditText
+                        android:layout_weight="9"
+                        android:id="@+id/edittextpassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Nhập mật khẩu..."
+                        android:textSize="15dp"
+                        android:inputType="textPassword"/>
+                    <!-- android:layout_gravity="center"/>-->
+                </LinearLayout>
+
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/edittextpassword"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:hint="Nhập mật khẩu..."-->
+                <!--android:singleLine="true"-->
+                <!--android:textSize="15dp"-->
+                <!--android:drawableLeft="@drawable/pass"//Không sử dụng imagebutton thì thêm hình bằng hàm dra....-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Remember me" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Forgot Password?"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:background="#d67601"
+                    android:text="Sign in"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/Avater"
+        android:layout_below="@+id/Account"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/account"/>
+
+
+
+</RelativeLayout>
