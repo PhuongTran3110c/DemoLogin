@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#17ACDD"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".View.MainActivity">
 
 
     <TextView
@@ -118,6 +118,7 @@
                     <CheckBox
                         android:layout_weight="1"
                         android:layout_width="0dp"
+                        android:id="@+id/checkid"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Remember me" />
